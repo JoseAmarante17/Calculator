@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href="style.css">
-    <link rel="icon" href="Dakirby309-Windows-8-Metro-Apps-Calculator-Metro.ico">
-    
-    <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Dakirby309-Windows-8-Metro-Apps-Calculator-Metro.ico">
+
+  <title>Calculator</title>
 </head>
+
 <body>
-    <h1>Calculator Time</h1>
-    <h3>Trust your Calculator, it's something to count on</h3>
-    <div class="calculator">
-        <div class="past" id="past"></div>
-        <div class="input" id="input"></div>
-        <div class="buttons">
-          <div class="operators">
-            <div>+</div>
-            <div>-</div>
-            <div>&times;</div>
-            <div>&divide;</div>
-          </div>
-          <div class="leftPanel">
-            <div class="numbers">
-              <div>7</div>
-              <div>8</div>
-              <div>9</div>
-            </div>
-            <div class="numbers">
-              <div>4</div>
-              <div>5</div>
-              <div>6</div>
-            </div>
-            <div class="numbers">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-            </div>
-            <div class="numbers">
-              <div>0</div>
-              <div>.</div>
-              <div id="clear" onclick="cancel()">C</div>
-            </div>
-          </div>
-          <div class="equal" id="result" onclick="result()">=</div>
+  <h1>Calculator Time</h1>
+  <h3>Trust your Calculator, it's something to count on</h3>
+  <div class="modes">
+    <button id= "light"onclick="changeLight()">Light Mode</button>
+    <button id="dark" onclick="changeDark()">Dark Mode</button>
+  </div>
+  <div class="calculator" id="calculator">
+    <div class="past" id="past"></div>
+    <div class="input" id="input"></div>
+    <div class="buttons">
+      <div class="operators" id="operators">
+        <div id="operators">+</div>
+        <div id="operators">-</div>
+        <div id="operators">&times;</div>
+        <div id="operators">&divide;</div>
+      </div>
+      <div class="leftPanel">
+        <div class="numbers" id="numbers">
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+        </div>
+        <div class="numbers" id="numbers">
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+        </div>
+        <div class="numbers" id="numbers">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+        <div class="numbers" id="numbers">
+          <div>0</div>
+          <div>.</div>
+          <div id="clear" onclick="cancel()">C</div>
         </div>
       </div>
-      <footer>
-          Jose Amarante
-      </footer>
-      <script src="code.js"></script>
+      <div class="equal" id="result" onclick="result()">=</div>
+    </div>
+  </div>
+  <footer>
+    Jose Amarante
+  </footer>
+  <script src="code.js"></script>
 </body>
+
 </html>

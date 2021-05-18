@@ -116,6 +116,20 @@ result.addEventListener("click", function() {
   past.innerHTML = inputString+"=" + numbers[0] ;
 });
 
+//CHANGES COLORS
+function changeLight(){
+  let background =document.getElementById("calculator");
+  let input = document.getElementById("input")
+  background.style.backgroundColor = "white";
+  input.style.color = "Black"
+}
+function changeDark(){
+  let background =document.getElementById("calculator");
+  let input = document.getElementById("input")
+
+  background.style.backgroundColor = "#151515";
+  input.style.color = "white";
+}
 // clearing the input on press of clear
 clear.addEventListener("click", function() {
   input.innerHTML = "";
