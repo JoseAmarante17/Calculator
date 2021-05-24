@@ -126,10 +126,12 @@ function changeLight(){
 }
 function changeDark(){
   let background =document.getElementById("calculator");
-  let input = document.getElementById("input")
+  let input = document.getElementById("input");
+  let past = document.getElementById("past");
 
   background.style.backgroundColor = "#151515";
   input.style.color = "white";
+  past.style.color="white";
 }
 // clearing the input on press of clear
 clear.addEventListener("click", function() {
