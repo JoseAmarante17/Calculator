@@ -121,8 +121,11 @@ result.addEventListener("click", function() {
 function changeLight(){
   let background =document.getElementById("calculator");
   let input = document.getElementById("input")
+  let past = document.getElementById("past");
+ 
   background.style.backgroundColor = "white";
   input.style.color = "Black"
+  past.style.color ="white";
 }
 function changeDark(){
   let background =document.getElementById("calculator");
