@@ -124,8 +124,8 @@ function changeLight(){
   let past = document.getElementById("past");
  
   background.style.backgroundColor = "white";
-  input.style.color = "Black"
-  past.style.color ="white";
+  input.style.color = "Black";
+  past.style.color ="black";
 }
 function changeDark(){
   let background =document.getElementById("calculator");
